@@ -13,4 +13,4 @@ LISTA ZADAŃ DO WYKONANIA NA LABORATORIUM:
   <p>- <b>void getWednesdayTraining()</b> - dla klasy <b>SwimmingCoach</b>.</p>
   
 <p align = "justify">Powyższe metody powinny wyświetlać na ekran polecenia trenera wyjątkowe dla danego dnia tygodnia występującego w nazwie metody (np. "Dziś jest niedziela. Zjedz stejki!" dla klasy <b>GymCoach</b>). Następnie napisać metodę <b>void&nbspperformDailyTraining</b> przyjmującą jako argumenty wskaźnik na obiekt typu <b>Coach</b> oraz zmienną typu wyliczeniowego przyjmującą wartość reprezentującą dany dzień tygodnia.
-W zależności od dnia, wykonać na rzecz argumentu typu <b>Coach</b> funkcję przewidzianą na ten dzień. Jeżeli przekazany przez argument dzień tygodnia nie jest dniem szczególnym dla danego typu trenera, należy wykonać na jego rzecz funkcję <b>getDailyTraining</b>.</p>
+W zależności od dnia, wykonać na rzecz argumentu typu <b>Coach</b> funkcję przewidzianą na ten dzień. Jeżeli przekazany przez argument dzień tygodnia nie jest dniem szczególnym dla danego typu trenera, należy wykonać na jego rzecz funkcję <b>getDailyTraining</b>. Przetestować działanie tej funkcji dla różnych typów trenerów. </p>
