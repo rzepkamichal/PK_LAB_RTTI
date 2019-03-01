@@ -2,7 +2,7 @@
 
 LISTA ZADAŃ DO WYKONANIA NA LABORATORIUM:
 <p align = "justify">1. Stwórz następujące klasy:
-<b>Animal</b> - zawierającą czysto wirtualną metodę <b>whatAnimal()</b> służącą do wypisywania informacji o zwierząciu. Należy pamiętać o destruktorze.
+<b>Animal</b> - zawierającą czysto wirtualną metodę <b>whatAnimal()</b> służącą do wypisywania informacji o zwierząciu.
 <b>Cat</b> - dziedzicząca publicznie po klasie <b>Animal</b>. Wypisuje ona informację o nazwie zwierzęcia ("Cat") przy użyciu metody <b>whatAnimal</b>;  
 <b>Dog</b> - dziedzicząca publicznie po klasie <b>Animal</b>. Wypisuje ona informację o nazwie zwierzęcia ("Dog") przy użyciu metody <b>whatAnimal</b>. Stworzyć obiekty typu <b>Dog</b> i <b>Cat</b> oraz przetestować na nich działanie operatora <b>typeid(<wsk_na_obiekt>).name().</b></p>
   
