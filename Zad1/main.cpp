@@ -8,29 +8,6 @@
 #include "RandomAnimals.h"
 
 using namespace std;
-enum DayOfWeek{M,T,W,F,SA,SU};
-
-void performTraining(Coach *coach){
-    coach->getDailyTraining();
-}
-
-void performDailyTraining(Coach *coach, DayOfWeek day){
-
-    if(day == SU && dynamic_cast<GymCoach*>(coach)){
-        GymCoach* gymC = dynamic_cast<GymCoach*>(coach);
-        gymC->getSundayTraining();
-    }else if(day == SA && dynamic_cast<BaseballCoach*>(coach)){
-        BaseballCoach* baseballC = dynamic_cast<BaseballCoach*>(coach);
-        baseballC->getSaturdayTraining();
-    }else if(day == W && dynamic_cast<SwimmingCoach*>(coach)){
-        SwimmingCoach* swimmC = dynamic_cast<SwimmingCoach*>(coach);
-        swimmC->getWednesdayTraining();
-    }else{
-        coach->getDailyTraining();
-    }
-
-}
-
 
 int main() {
 
