@@ -4,6 +4,9 @@
 
 class Coach {
 public:
+
+    //funkcja implementowana w klasach potomnych
+    //wyswietla na ekran polecenia charakterystyczne dla danego trenera
     virtual void getDailyTraining()=0;
 };
 

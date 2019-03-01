@@ -7,6 +7,8 @@
 class GymCoach : public Coach {
 public:
     void getDailyTraining() override;
+
+    //wyswietla na ekran polecenie na niedziele
     void getSundayTraining();
 };
 

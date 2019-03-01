@@ -7,6 +7,8 @@
 class BaseballCoach : public Coach{
 public:
     void getDailyTraining() override;
+
+    //wyswietla na ekran polecenie na sobote
     void getSaturdayTraining();
 };
 

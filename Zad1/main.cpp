@@ -13,15 +13,24 @@ int main() {
 
     srand(time(NULL));
 
+    //liczba wygenerowanych losowo obiektow typu Animals
     int numberOfAnimals = 20;
+
     RandomAnimals randomAnimals;
 
+    //losowe generowanie obiektow Animals
     randomAnimals.insertRandomAnimals(numberOfAnimals);
+
+    //przypisanie wektora cats
     std::vector<Cat*> cats = randomAnimals.getCats();
+
+    //wyswietlenie lczby obiektow cats stanowiacych wygenerowany obiekty Animals
+    cout << "liczba kotow: " << cats.size() << endl;
 
     for(int i = 0; i < cats.size(); i++){
         cats[i]->whatAnimal();
     }
+
     cats.clear();
 
 

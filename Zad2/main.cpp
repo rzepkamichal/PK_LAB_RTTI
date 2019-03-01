@@ -6,9 +6,9 @@ using namespace std;
 
 int main() {
 
-    Artist* artist = new Artist;
-    Artist* musician = new Musician;
-    Artist* pianist = new Pianist;
+    Artist* artist = new Artist();
+    Artist* musician = new Musician();
+    Artist* pianist = new Pianist();
 
     //przypadki testowe rzutowania
     Musician* p1 = dynamic_cast<Musician*>(musician);

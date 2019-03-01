@@ -16,16 +16,12 @@ void RandomAnimals::insertRandomAnimal() {
 }
 
 void RandomAnimals::insertRandomAnimals(int number) {
-    for(int i = 0; i < number; i++)
+    for(int i = 0; i < number; i++) {
         insertRandomAnimal();
-    updateCats();
-}
+        if(typeid(Cat) == typeid(*(this->animals[this->animals.size()-1])))
+            this->cats.push_back((Cat*)this->animals[this->animals.size()-1]);
+    }
 
-void RandomAnimals::updateCats() {
-
-    for(int i = 0; i < this->animals.size(); i++)
-        if(typeid(Cat) == typeid(*(this->animals[i])))
-            this->cats.push_back((Cat*)this->animals[i]);
 }
 
 std::vector<Cat *> &RandomAnimals::getCats() {
