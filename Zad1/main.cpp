@@ -24,7 +24,7 @@ int main() {
     //przypisanie wektora cats
     std::vector<Cat*> cats = randomAnimals.getCats();
 
-    //wyswietlenie lczby obiektow cats stanowiacych wygenerowany obiekty Animals
+    //wyswietlenie lczby obiektow Cat stanowiacych wygenerowane obiekty Animals
     cout << "liczba kotow: " << cats.size() << endl;
 
     for(int i = 0; i < cats.size(); i++){
