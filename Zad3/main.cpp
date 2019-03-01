@@ -1,11 +1,11 @@
 #include <iostream>
-#include <vector>
-#include <typeinfo>
-#include <ctime>
-#include "Animal.h"
-#include "Cat.h"
-#include "Dog.h"
-#include "RandomAnimals.h"
+#include "Artist.h"
+#include "Musician.h"
+#include "Pianist.h"
+#include "Coach.h"
+#include "BaseballCoach.h"
+#include "GymCoach.h"
+#include "SwimmingCoach.h"
 
 using namespace std;
 enum DayOfWeek{M,T,W,F,SA,SU};
@@ -31,22 +31,27 @@ void performDailyTraining(Coach *coach, DayOfWeek day){
 
 }
 
-
 int main() {
 
-    srand(time(NULL));
+    Coach* baseballC = new BaseballCoach();
+    Coach* gymC = new GymCoach();
+    Coach* swimmC = new SwimmingCoach();
 
-    int numberOfAnimals = 20;
-    RandomAnimals randomAnimals;
+    //testy funkcji performTraining
+    cout << "perform training:" << endl;
+    performTraining(baseballC);
+    performTraining(gymC);
+    performTraining(swimmC);
+    cout << endl;
 
-    randomAnimals.insertRandomAnimals(numberOfAnimals);
-    std::vector<Cat*> cats = randomAnimals.getCats();
-
-    for(int i = 0; i < cats.size(); i++){
-        cats[i]->whatAnimal();
-    }
-    cats.clear();
-
+    //testy funkcji performDailyTraining
+    cout << "perform daily training:" << endl;
+    performDailyTraining(baseballC, M);
+    performDailyTraining(baseballC, SA);
+    performDailyTraining(gymC, W);
+    performDailyTraining(gymC, SU);
+    performDailyTraining(swimmC, F);
+    performDailyTraining(swimmC, W);
 
     return 0;
 }

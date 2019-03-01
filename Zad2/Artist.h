@@ -4,7 +4,7 @@
 
 class Artist {
 
-    virtual void beCrative();
+    virtual void beCrative() = 0;
 
 };
 

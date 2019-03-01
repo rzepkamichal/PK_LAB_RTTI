@@ -2,56 +2,27 @@
 #include "Artist.h"
 #include "Musician.h"
 #include "Pianist.h"
-#include "Coach.h"
-#include "BaseballCoach.h"
-#include "GymCoach.h"
-#include "SwimmingCoach.h"
-
 using namespace std;
-enum DayOfWeek{M,T,W,F,SA,SU};
-
-void performTraining(Coach *coach){
-    coach->getDailyTraining();
-}
-
-void performDailyTraining(Coach *coach, DayOfWeek day){
-
-    if(day == SU && dynamic_cast<GymCoach*>(coach)){
-        GymCoach* gymC = dynamic_cast<GymCoach*>(coach);
-        gymC->getSundayTraining();
-    }else if(day == SA && dynamic_cast<BaseballCoach*>(coach)){
-        BaseballCoach* baseballC = dynamic_cast<BaseballCoach*>(coach);
-        baseballC->getSaturdayTraining();
-    }else if(day == W && dynamic_cast<SwimmingCoach*>(coach)){
-        SwimmingCoach* swimmC = dynamic_cast<SwimmingCoach*>(coach);
-        swimmC->getWednesdayTraining();
-    }else{
-        coach->getDailyTraining();
-    }
-
-}
 
 int main() {
 
-    Coach* baseballC = new BaseballCoach();
-    Coach* gymC = new GymCoach();
-    Coach* swimmC = new SwimmingCoach();
+    Artist* artist = new Artist;
+    Artist* musician = new Musician;
+    Artist* pianist = new Pianist;
 
-    //testy funkcji performTraining
-    cout << "perform training:" << endl;
-    performTraining(baseballC);
-    performTraining(gymC);
-    performTraining(swimmC);
-    cout << endl;
+    //przypadki testowe rzutowania
+    Musician* p1 = dynamic_cast<Musician*>(musician);
+    Pianist* p2 = dynamic_cast<Pianist*>(musician);
+    Musician* p3 = dynamic_cast<Musician*>(pianist);
+    Musician* p4 = dynamic_cast<Musician*> (artist);
+    Pianist* p5 = dynamic_cast<Pianist*>(artist);
 
-    //testy funkcji performDailyTraining
-    cout << "perform daily training:" << endl;
-    performDailyTraining(baseballC, M);
-    performDailyTraining(baseballC, SA);
-    performDailyTraining(gymC, W);
-    performDailyTraining(gymC, SU);
-    performDailyTraining(swimmC, F);
-    performDailyTraining(swimmC, W);
+    //wypisanie adresów przypisanych do wskaźników przez rzutowanie
+    cout << p1 << endl; // oczekiwany poprawny adres
+    cout << p2 << endl; // oczekiwany nullptr
+    cout << p3 << endl; // oczekiwany poprawny adres
+    cout << p4 << endl; // oczekiwany nullptr
+    cout << p5 << endl; // oczekiwany nullptr
 
     return 0;
 }
