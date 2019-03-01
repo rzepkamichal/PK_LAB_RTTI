@@ -1,7 +1,17 @@
 # PK_LAB_RTTI
 
 LISTA ZADAŃ DO WYKONANIA NA LABORATORIUM:
-1. ...
+<p align = "justify">1. Stwórz następujące klasy:
+<b>Animal</b> - zawierającą wirtualną metodę <b>whatAnimal()</b> służącą do wypisywania informacji o zwierząciu. Należy pamiętać o destruktorze.
+<b>Cat</b> - dziedzicząca publicznie po klasie Animal. Wypisuje ona informację o nazwie zwierzęcia ("Cat") przy użyciu metody <b>whatAnimal</b>  
+<b>Dog</b> - dziedzicząca publicznie po klasie Animal. Wypisuje ona informację o nazwie zwierzęcia ("Dog") przy użyciu metody <b>whatAnimal</b>.</p>
+  
+<p align = "justify">1.1. Z wykorzystaniem funkcji <b>rand()</b> napisać klasę <b>randomAnimal</b>. Klasa powinna losowo tworzyć zwierzę klasy Cat lub Dog.</p>
+
+<p align = "justify">1.2. Należy utworzyć wektor losowych zwierząt o zadanej ilości przekazywanej w argumencie funkcji.</p>
+
+<p align = "justify">1.3. Stwórz funkcję <b>getCats</b>, która wyświetla nazwy losowo utworzonych klas. Konieczne jest wykorzystanie operatora <b>typeid</b>. Ponadto funkcja sprawdza, czy dana klasa jest klasą Cat (porównanie z użyciem <b>typeid</b>).
+Jeśli jest, to dana klasa zostaje dodana do utworzonego wektora. Ostatnim krokiem jest wykorzystanie wirtualnej metody <b>whatAnimal</b> wywołanej tyle razy, ile powstało obiektów klasy Cat. Należy pamiętać o usunięciu obiektów na koniec działania programu.</p>
 
 <p align = "justify">2. Zadeklarować następującą hierarchię klas: klasa polimorficzna Artist (posiadająca metodę wirtualną <b>virtual&nbspvoid&nbspbeCreative()</b>), klasa <b>Musician</b> publicznie dziedzicząca po klasie <b>Artist</b> oraz klasa <b>Pianist</b> publicznie dziedzicząca po klasie <b>Musician</b>. Następnie stworzyć 3 wskaźniki typu <b>Artist</b> i przypisać im adres nowych obiektów - kolejno typu <b>Artist, Musician, Pianist</b>. Następnie wymyślić trzy testowe przypadki rzutowania (analogicznie do przykładu 2 z prezentacji) wykorzystując operator <b>dynamic_cast</b>. W przypadkach testowych uwzględnić zarówno z reguły poprawny, jak i niepoprawny sposób rzutowania. Sprawdzić wynik działania programu (przykładowo wyświetlając na ekran wynik rzutowania). </p>
 
