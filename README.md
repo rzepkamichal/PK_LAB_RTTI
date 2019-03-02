@@ -4,7 +4,7 @@ LISTA ZADAŃ DO WYKONANIA NA LABORATORIUM:
 <p align = "justify">1. Stwórz następujące klasy:
 <b>Animal</b> - zawierającą czysto wirtualną metodę <b>whatAnimal()</b> służącą do wypisywania informacji o zwierząciu.
 <b>Cat</b> - dziedzicząca publicznie po klasie <b>Animal</b>. Wypisuje ona informację o nazwie zwierzęcia ("Cat") przy użyciu metody <b>whatAnimal</b>;  
-<b>Dog</b> - dziedzicząca publicznie po klasie <b>Animal</b>. Wypisuje ona informację o nazwie zwierzęcia ("Dog") przy użyciu metody <b>whatAnimal</b>. Stworzyć obiekty typu <b>Dog</b> i <b>Cat</b> oraz przetestować na nich działanie operatora <b>typeid(<wsk_na_obiekt>).name().</b></p>
+<b>Dog</b> - dziedzicząca publicznie po klasie <b>Animal</b>. Wypisuje ona informację o nazwie zwierzęcia ("Dog") przy użyciu metody <b>whatAnimal</b>. Stworzyć obiekty typu <b>Dog</b> i <b>Cat</b> oraz przetestować na nich działanie operatora <b>typeid(...).name().</b></p>
   
 <p align = "justify">1.1. Stworzyć klasę <b>RandomAnimals</b> posiadająca dwie składowe - wektor obiektów typu <b>Animal</b> oraz wektor obiektów typu <b>Cat</b>. W klasie zdefiniować również funkcję <b>insertRandomAnimals</b> dodającą otrzymaną jako argument liczbę nowych obiektów do wektora typu <b>Animal</b>. Typ nowo dodawanego elementu powinien być każdorazowo wybierany w sposób losowy (typ <b>Cat</b> albo <b>Dog</b>). Ponadto, jeżeli dodawany obiekt jest typu <b>Cat</b>, powinien on być również dodawany do wektora typu <b>Cat</b>. W implementacji wykorzystać operator <b>typeid</b>.</p>
 
