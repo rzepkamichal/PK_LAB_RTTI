@@ -20,7 +20,7 @@ int main() {
     Cat* ptrKot = &kot;
     
     //test typeid(wskaznik).name();
-    cout << typeid(*pies).name() << ", " << typeid(*kot).name() << endl;
+    cout << typeid(pies).name() << ", " << typeid(kot).name() << endl;
 
     //liczba wygenerowanych losowo obiektow typu Animals
     int numberOfAnimals = 20;
