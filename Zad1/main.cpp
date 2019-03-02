@@ -16,9 +16,6 @@ int main() {
     Dog pies;
     Cat kot;
     
-    Dog* ptrPies = &pies;
-    Cat* ptrKot = &kot;
-    
     //test typeid(wskaznik).name();
     cout << typeid(pies).name() << ", " << typeid(kot).name() << endl;
 
