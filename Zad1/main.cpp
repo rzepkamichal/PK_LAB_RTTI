@@ -12,6 +12,15 @@ using namespace std;
 int main() {
 
     srand(time(NULL));
+    
+    Dog pies;
+    Cat kot;
+    
+    Dog* ptrPies = &pies;
+    Cat* ptrKot = &kot;
+    
+    //test typeid(wskaznik).name();
+    cout << typeid(*pies).name() << ", " << typeid(*kot).name() << endl;
 
     //liczba wygenerowanych losowo obiektow typu Animals
     int numberOfAnimals = 20;
